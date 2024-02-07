@@ -12,12 +12,13 @@ root.render(
     <MetaMaskProvider
       debug={false}
       sdkOptions={{
+        enableAnalytics: false,
         logging: {
           developerMode: false,
         },
         dappMetadata: {
-          name: 'silent-shard-dapp',
-          url: window.location.host,
+          name: 'Silent Shard dApp',
+          url: window.location.href,
         },
         checkInstallationImmediately: true,
       }}>
